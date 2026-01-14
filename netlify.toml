@@ -1,0 +1,23 @@
+[build]
+  publish = "."
+
+# Pretty URLs like /about instead of /about.html
+[[redirects]]
+  from = "/about"
+  to = "/about.html"
+  status = 200
+
+[[redirects]]
+  from = "/testimonials"
+  to = "/testimonials.html"
+  status = 200
+
+[[redirects]]
+  from = "/pricing"
+  to = "/pricing.html"
+  status = 200
+
+[[redirects]]
+  from = "/work-with-me"
+  to = "/work-with-me.html"
+  status = 200
