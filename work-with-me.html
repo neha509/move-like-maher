@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Work With Me — Move Like Maher</title>
+  <meta name="description" content="Apply to work with Maher. Strength + mobility coaching." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <a class="brand" href="index.html">
+          <div class="mark"></div>
+          <div class="brand-title">
+            <strong>Move Like Maher</strong>
+            <span>Strength • Mobility • Longevity</span>
+          </div>
+        </a>
+        <div class="links">
+          <a data-nav href="index.html">Home</a>
+          <a data-nav href="about.html">About</a>
+          <a data-nav href="testimonials.html">Testimonials</a>
+          <a data-nav href="pricing.html">Pricing</a>
+        </div>
+        <div class="nav-cta">
+          <a class="button primary" href="work-with-me.html">Work with me</a>
+          <button class="mobile-toggle" data-toggle aria-expanded="false" aria-controls="mobileMenu">Menu</button>
+        </div>
+      </nav>
+      <div class="mobile-menu" id="mobileMenu" data-mobile>
+        <a data-nav href="index.html">Home</a>
+        <a data-nav href="about.html">About</a>
+        <a data-nav href="testimonials.html">Testimonials</a>
+        <a data-nav href="pricing.html">Pricing</a>
+        <a data-nav href="work-with-me.html">Work with me</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="kicker"><span class="dot"></span> Work with Maher</div>
+        <h1>Let’s build your <span class="accent">strongest</span>, most <span class="accent">mobile</span> body.</h1>
+        <p class="lede">Fill this out and Maher will reply with next steps.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split">
+        <div class="card">
+          <div class="card-inner">
+            <h2>Quick application</h2>
+
+            <!-- Netlify form: works automatically after deploy -->
+            <form class="form" name="work-with-maher" method="POST" data-netlify="true">
+              <input type="hidden" name="form-name" value="work-with-maher" />
+
+              <input class="input" name="name" placeholder="Your name" required />
+              <input class="input" name="email" type="email" placeholder="Email" required />
+              <input class="input" name="location" placeholder="City / Time zone" />
+
+              <input class="input" name="goal" placeholder="Main goal (strength, mobility, pain-free training, etc.)" required />
+              <input class="input" name="schedule" placeholder="How many days/week can you train?" />
+              <textarea name="message" placeholder="Anything Maher should know (injuries, history, what’s worked/hasn’t worked)"></textarea>
+
+              <button class="button primary" type="submit">Submit</button>
+              <p class="note">This form is routed through Netlify. You can set email notifications in Netlify → Forms.</p>
+            </form>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-inner">
+            <div class="smallcaps">What happens next</div>
+            <h2 style="margin-top:10px;">Simple + direct</h2>
+            <ul class="ul">
+              <li>Maher reviews your goals + schedule</li>
+              <li>You get a recommendation for the right package</li>
+              <li>Onboarding: assessment + plan + first week setup</li>
+            </ul>
+
+            <p class="quote">Want to add Calendly? Paste the embed here later (easy).</p>
+            <a class="button small" href="pricing.html">See pricing</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="smallcaps">Move Like Maher</div>
+      <p style="margin:10px 0 0;">© <span id="year"></span> Maher • Strength + Mobility Coaching</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
