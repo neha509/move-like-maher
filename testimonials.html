@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Testimonials — Move Like Maher</title>
+  <meta name="description" content="Client testimonials for Move Like Maher strength + mobility coaching." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <a class="brand" href="index.html">
+          <div class="mark"></div>
+          <div class="brand-title">
+            <strong>Move Like Maher</strong>
+            <span>Strength • Mobility • Longevity</span>
+          </div>
+        </a>
+        <div class="links">
+          <a data-nav href="index.html">Home</a>
+          <a data-nav href="about.html">About</a>
+          <a data-nav href="testimonials.html">Testimonials</a>
+          <a data-nav href="pricing.html">Pricing</a>
+        </div>
+        <div class="nav-cta">
+          <a class="button primary" href="work-with-me.html">Work with me</a>
+          <button class="mobile-toggle" data-toggle aria-expanded="false" aria-controls="mobileMenu">Menu</button>
+        </div>
+      </nav>
+      <div class="mobile-menu" id="mobileMenu" data-mobile>
+        <a data-nav href="index.html">Home</a>
+        <a data-nav href="about.html">About</a>
+        <a data-nav href="testimonials.html">Testimonials</a>
+        <a data-nav href="pricing.html">Pricing</a>
+        <a data-nav href="work-with-me.html">Work with me</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="kicker"><span class="dot"></span> Client testimonials</div>
+        <h1>Proof that the method works — <span class="accent">and feels good</span>.</h1>
+        <p class="lede">Replace the quotes below with real testimonials (name initials are totally fine).</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid3">
+        <div class="feature">
+          <span class="badge">Strength</span>
+          <h3>“My lifts finally make sense.”</h3>
+          <p class="quote">“Maher fixed my technique in a way that clicked instantly. I’m stronger and less achy.”</p>
+          <p class="note">— A.K.</p>
+        </div>
+
+        <div class="feature">
+          <span class="badge">Mobility</span>
+          <h3>“My hips feel open again.”</h3>
+          <p class="quote">“I used to stretch randomly. Now I have a plan and my squat depth improved.”</p>
+          <p class="note">— J.S.</p>
+        </div>
+
+        <div class="feature">
+          <span class="badge">Consistency</span>
+          <h3>“I’m training 3x/week — effortlessly.”</h3>
+          <p class="quote">“The program fits my schedule and still pushes me. I don’t overthink it anymore.”</p>
+          <p class="note">— M.L.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container card">
+        <div class="card-inner">
+          <h2>Want to be the next success story?</h2>
+          <p>Tell me your goals and we’ll pick the right package.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="work-with-me.html">Apply to work with me</a>
+            <a class="button ghost" href="pricing.html">View pricing</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="smallcaps">Move Like Maher</div>
+      <p style="margin:10px 0 0;">© <span id="year"></span> Maher • Strength + Mobility Coaching</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
