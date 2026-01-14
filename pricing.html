@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pricing — Move Like Maher</title>
+  <meta name="description" content="Coaching packages for Move Like Maher. Strength + mobility coaching." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <a class="brand" href="index.html">
+          <div class="mark"></div>
+          <div class="brand-title">
+            <strong>Move Like Maher</strong>
+            <span>Strength • Mobility • Longevity</span>
+          </div>
+        </a>
+        <div class="links">
+          <a data-nav href="index.html">Home</a>
+          <a data-nav href="about.html">About</a>
+          <a data-nav href="testimonials.html">Testimonials</a>
+          <a data-nav href="pricing.html">Pricing</a>
+        </div>
+        <div class="nav-cta">
+          <a class="button primary" href="work-with-me.html">Work with me</a>
+          <button class="mobile-toggle" data-toggle aria-expanded="false" aria-controls="mobileMenu">Menu</button>
+        </div>
+      </nav>
+      <div class="mobile-menu" id="mobileMenu" data-mobile>
+        <a data-nav href="index.html">Home</a>
+        <a data-nav href="about.html">About</a>
+        <a data-nav href="testimonials.html">Testimonials</a>
+        <a data-nav href="pricing.html">Pricing</a>
+        <a data-nav href="work-with-me.html">Work with me</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="kicker"><span class="dot"></span> Pricing</div>
+        <h1>Choose your package — <span class="accent">then we build</span>.</h1>
+        <p class="lede">These are placeholders. Swap in Maher’s real pricing + what’s included.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container pricing">
+        <div class="plan">
+          <span class="badge">Foundation</span>
+          <h3>Program Only</h3>
+          <div class="price">$—</div>
+          <div class="per">per month</div>
+          <ul class="ul">
+            <li>Custom strength + mobility plan</li>
+            <li>Weekly updates</li>
+            <li>Messaging support</li>
+          </ul>
+          <div class="hero-actions" style="margin-top:14px;">
+            <a class="button small" href="work-with-me.html">Get started</a>
+          </div>
+        </div>
+
+        <div class="plan highlight">
+          <span class="badge">Most popular</span>
+          <h3>1:1 Coaching</h3>
+          <div class="price">$—</div>
+          <div class="per">per month</div>
+          <ul class="ul">
+            <li>Custom programming + mobility</li>
+            <li>Form reviews</li>
+            <li>Weekly check-ins</li>
+            <li>Priority support</li>
+          </ul>
+          <div class="hero-actions" style="margin-top:14px;">
+            <a class="button primary small" href="work-with-me.html">Apply</a>
+          </div>
+        </div>
+
+        <div class="plan">
+          <span class="badge">Premium</span>
+          <h3>In-Person</h3>
+          <div class="price">$—</div>
+          <div class="per">per session / package</div>
+          <ul class="ul">
+            <li>In-person sessions</li>
+            <li>Movement assessment</li>
+            <li>Technique + mobility coaching</li>
+          </ul>
+          <div class="hero-actions" style="margin-top:14px;">
+            <a class="button small" href="work-with-me.html">Inquire</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container card">
+        <div class="card-inner">
+          <h2>Not sure what to pick?</h2>
+          <p>Tell me your goals, training history, and schedule — I’ll recommend the best fit.</p>
+          <a class="button primary" href="work-with-me.html">Work with me</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="smallcaps">Move Like Maher</div>
+      <p style="margin:10px 0 0;">© <span id="year"></span> Maher • Strength + Mobility Coaching</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
