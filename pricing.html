@@ -3,120 +3,154 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Pricing — Move Like Maher</title>
-  <meta name="description" content="Coaching packages for Move Like Maher. Strength + mobility coaching." />
+
+  <title>Pricing — Coaching with Maher</title>
+  <meta name="description" content="Online, in-person, and hybrid coaching packages with Maher Mena Mickel." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500,700&family=Inter:wght@400,500,600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-  <header class="header">
-    <div class="container">
-      <nav class="nav">
-        <a class="brand" href="index.html">
-          <div class="mark"></div>
-          <div class="brand-title">
-            <strong>Move Like Maher</strong>
-            <span>Strength • Mobility • Longevity</span>
-          </div>
-        </a>
-        <div class="links">
-          <a data-nav href="index.html">Home</a>
-          <a data-nav href="about.html">About</a>
-          <a data-nav href="testimonials.html">Testimonials</a>
-          <a data-nav href="pricing.html">Pricing</a>
-        </div>
-        <div class="nav-cta">
-          <a class="button primary" href="work-with-me.html">Work with me</a>
-          <button class="mobile-toggle" data-toggle aria-expanded="false" aria-controls="mobileMenu">Menu</button>
-        </div>
-      </nav>
-      <div class="mobile-menu" id="mobileMenu" data-mobile>
+
+<header class="header">
+  <div class="container">
+    <nav class="nav">
+
+      <a class="brand" href="index.html" style="display:flex; flex-direction:column; line-height:1.05;">
+        <span style="font-weight:700;">Maher Mena Mickel</span>
+      </a>
+
+      <div class="navlinks">
         <a data-nav href="index.html">Home</a>
         <a data-nav href="about.html">About</a>
         <a data-nav href="testimonials.html">Testimonials</a>
         <a data-nav href="pricing.html">Pricing</a>
-        <a data-nav href="work-with-me.html">Work with me</a>
       </div>
-    </div>
-  </header>
 
-  <main>
-    <section class="hero">
-      <div class="container">
-        <div class="kicker"><span class="dot"></span> Pricing</div>
-        <h1>Choose your package — <span class="accent">then we build</span>.</h1>
-        <p class="lede">These are placeholders. Swap in Maher’s real pricing + what’s included.</p>
-      </div>
-    </section>
+      <a class="button primary" href="work-with-me.html">Work with me</a>
 
-    <section class="section">
-      <div class="container pricing">
-        <div class="plan">
-          <span class="badge">Foundation</span>
-          <h3>Program Only</h3>
-          <div class="price">$—</div>
-          <div class="per">per month</div>
-          <ul class="ul">
-            <li>Custom strength + mobility plan</li>
-            <li>Weekly updates</li>
-            <li>Messaging support</li>
-          </ul>
-          <div class="hero-actions" style="margin-top:14px;">
-            <a class="button small" href="work-with-me.html">Get started</a>
-          </div>
-        </div>
+    </nav>
+  </div>
+</header>
 
-        <div class="plan highlight">
-          <span class="badge">Most popular</span>
-          <h3>1:1 Coaching</h3>
-          <div class="price">$—</div>
-          <div class="per">per month</div>
-          <ul class="ul">
-            <li>Custom programming + mobility</li>
-            <li>Form reviews</li>
-            <li>Weekly check-ins</li>
-            <li>Priority support</li>
-          </ul>
-          <div class="hero-actions" style="margin-top:14px;">
-            <a class="button primary small" href="work-with-me.html">Apply</a>
-          </div>
-        </div>
+<main>
 
-        <div class="plan">
-          <span class="badge">Premium</span>
-          <h3>In-Person</h3>
-          <div class="price">$—</div>
-          <div class="per">per session / package</div>
-          <ul class="ul">
-            <li>In-person sessions</li>
-            <li>Movement assessment</li>
-            <li>Technique + mobility coaching</li>
-          </ul>
-          <div class="hero-actions" style="margin-top:14px;">
-            <a class="button small" href="work-with-me.html">Inquire</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container card">
-        <div class="card-inner">
-          <h2>Not sure what to pick?</h2>
-          <p>Tell me your goals, training history, and schedule — I’ll recommend the best fit.</p>
-          <a class="button primary" href="work-with-me.html">Work with me</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
+  <!-- HERO -->
+  <section class="hero">
     <div class="container">
-      <div class="smallcaps">Move Like Maher</div>
-      <p style="margin:10px 0 0;">© <span id="year"></span> Maher • Strength + Mobility Coaching</p>
-    </div>
-  </footer>
+      <div class="kicker">
+        <span class="dot"></span>
+        Coaching options
+      </div>
 
-  <script src="script.js"></script>
-  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+      <h1>Choose how you want to train.</h1>
+
+      <p class="heroLead" style="max-width:60ch">
+        All options include individualized programming built around your goals,
+        movement, and schedule. The difference is how much in-person support you want.
+      </p>
+    </div>
+  </section>
+
+  <div class="container"><div class="rule"></div></div>
+
+  <!-- PRICING TABLE -->
+  <section class="section">
+    <div class="container">
+
+      <table style="width:100%; border-collapse:collapse;">
+
+        <thead>
+          <tr style="border-bottom:1px solid var(--rule);">
+            <th style="text-align:left; padding:14px 0;"></th>
+            <th style="text-align:left; padding:14px 0;">Online</th>
+            <th style="text-align:left; padding:14px 0;">Hybrid</th>
+            <th style="text-align:left; padding:14px 0;">In-Person</th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+          <tr style="border-bottom:1px solid var(--rule);">
+            <td style="padding:14px 0;">Sessions / month</td>
+            <td>0</td>
+            <td>4–8 in-person</td>
+            <td>8–12 in-person</td>
+          </tr>
+
+          <tr style="border-bottom:1px solid var(--rule);">
+            <td style="padding:14px 0;">Custom training plan</td>
+            <td>✓</td>
+            <td>✓</td>
+            <td>✓</td>
+          </tr>
+
+          <tr style="border-bottom:1px solid var(--rule);">
+            <td style="padding:14px 0;">Mobility programming</td>
+            <td>✓</td>
+            <td>✓</td>
+            <td>✓</td>
+          </tr>
+
+          <tr style="border-bottom:1px solid var(--rule);">
+            <td style="padding:14px 0;">Form review</td>
+            <td>Video</td>
+            <td>Video + in person</td>
+            <td>In person</td>
+          </tr>
+
+          <tr style="border-bottom:1px solid var(--rule);">
+            <td style="padding:14px 0;">Weekly check-ins</td>
+            <td>✓</td>
+            <td>✓</td>
+            <td>✓</td>
+          </tr>
+
+          <tr style="border-bottom:1px solid var(--rule);">
+            <td style="padding:14px 0;">Direct messaging support</td>
+            <td>✓</td>
+            <td>✓</td>
+            <td>✓</td>
+          </tr>
+
+          <tr style="border-bottom:1px solid var(--rule); font-weight:700;">
+            <td style="padding:18px 0;">Monthly price</td>
+            <td>$320</td>
+            <td>Starting at $—</td>
+            <td>Starting at $—</td>
+          </tr>
+
+        </tbody>
+      </table>
+
+      <p style="margin-top:16px; color:var(--subtle); max-width:70ch;">
+        Hybrid and in-person pricing depends on session frequency and location.
+        We’ll dial this in during your consult.
+      </p>
+
+      <div style="margin-top:22px; display:flex; gap:12px; flex-wrap:wrap;">
+        <a class="button primary" href="work-with-me.html">Apply to work with me</a>
+        <a class="button" href="testimonials.html">See client results</a>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p>© <span id="year"></span> Maher Mena Mickel — Strength & Mobility Coaching</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
