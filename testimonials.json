@@ -1,0 +1,31 @@
+{
+  "testimonials": [
+    {
+      "quote": "[Placeholder quote]",
+      "name": "[Name/Initials]",
+      "gender": "[Gender]",
+      "timeframe": "[Timeframe]",
+      "goal": "[Goal]",
+      "beforeImage": "assets/testimonial-placeholder-before.jpg",
+      "afterImage": "assets/testimonial-placeholder-after.jpg"
+    },
+    {
+      "quote": "[Placeholder quote]",
+      "name": "[Name/Initials]",
+      "gender": "[Gender]",
+      "timeframe": "[Timeframe]",
+      "goal": "[Goal]",
+      "beforeImage": "assets/testimonial-placeholder-before.jpg",
+      "afterImage": "assets/testimonial-placeholder-after.jpg"
+    },
+    {
+      "quote": "[Placeholder quote]",
+      "name": "[Name/Initials]",
+      "gender": "[Gender]",
+      "timeframe": "[Timeframe]",
+      "goal": "[Goal]",
+      "beforeImage": "assets/testimonial-placeholder-before.jpg",
+      "afterImage": "assets/testimonial-placeholder-after.jpg"
+    }
+  ]
+}
