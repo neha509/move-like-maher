@@ -170,6 +170,21 @@
 
 </main>
 
+<!-- Free Consult Popup -->
+<div id="welcome-popup" class="modal" style="display:none;">
+  <div class="modal-content">
+    <button class="modal-close" onclick="closeWelcomePopup()" aria-label="Close">×</button>
+    <div class="modal-header">
+      <h2>Book a free consult</h2>
+    </div>
+    <p>Ready to move better? Let's chat about your goals and see if we're a good fit.</p>
+    <div style="display:flex; gap:12px; flex-wrap:wrap; justify-content:center; margin-top:20px;">
+      <a class="button primary" href="work-with-me.html" onclick="closeWelcomePopup()">Book now</a>
+      <button class="button" onclick="closeWelcomePopup()">Maybe later</button>
+    </div>
+  </div>
+</div>
+
 <footer class="footer">
   <div class="container">
     <p>© <span id="year"></span> Maher — Strength & Mobility Coaching</p>
@@ -178,6 +193,39 @@
 
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();
+  
+  // Show welcome popup on first visit
+  function showWelcomePopup() {
+    // Check if user has seen the popup before
+    const hasSeenPopup = localStorage.getItem('hasSeenWelcomePopup');
+    if (!hasSeenPopup) {
+      const popup = document.getElementById('welcome-popup');
+      if (popup) {
+        setTimeout(() => {
+          popup.style.display = 'flex';
+        }, 500); // Small delay for better UX
+      }
+    }
+  }
+  
+  function closeWelcomePopup() {
+    const popup = document.getElementById('welcome-popup');
+    if (popup) {
+      popup.style.display = 'none';
+      localStorage.setItem('hasSeenWelcomePopup', 'true');
+    }
+  }
+  
+  // Close popup when clicking outside
+  window.addEventListener('click', function(e) {
+    const popup = document.getElementById('welcome-popup');
+    if (e.target === popup) {
+      closeWelcomePopup();
+    }
+  });
+  
+  // Show popup when page loads
+  showWelcomePopup();
 </script>
 
 </body>
