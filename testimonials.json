@@ -1,31 +1,28 @@
 {
   "testimonials": [
     {
-      "quote": "[Placeholder quote]",
-      "name": "[Name/Initials]",
-      "gender": "[Gender]",
-      "timeframe": "[Timeframe]",
-      "goal": "[Goal]",
-      "beforeImage": "assets/testimonial-placeholder-before.jpg",
-      "afterImage": "assets/testimonial-placeholder-after.jpg"
+      "quote": "Insert quote here",
+      "name": "Kunal",
+      "gender": "Male",
+      "timeframe": "4 months + 2 weeks",
+      "beforeImage": "assets/clients/client1-before.jpeg",
+      "afterImage": "assets/clients/client1-after.jpeg"
     },
     {
-      "quote": "[Placeholder quote]",
-      "name": "[Name/Initials]",
-      "gender": "[Gender]",
-      "timeframe": "[Timeframe]",
-      "goal": "[Goal]",
-      "beforeImage": "assets/testimonial-placeholder-before.jpg",
-      "afterImage": "assets/testimonial-placeholder-after.jpg"
+      "quote": "Insert quote here",
+      "name": "Sylvia",
+      "gender": "Female",
+      "timeframe": "2 months + 3 weeks",
+      "beforeImage": "assets/clients/client2-before.jpeg",
+      "afterImage": "assets/clients/client2-after.jpeg"
     },
     {
-      "quote": "[Placeholder quote]",
-      "name": "[Name/Initials]",
-      "gender": "[Gender]",
-      "timeframe": "[Timeframe]",
-      "goal": "[Goal]",
-      "beforeImage": "assets/testimonial-placeholder-before.jpg",
-      "afterImage": "assets/testimonial-placeholder-after.jpg"
+      "quote": "Insert quote here",
+      "name": "Reshaun",
+      "gender": "Male",
+      "timeframe": "3 months",
+      "beforeImage": "assets/clients/client3-before.jpg",
+      "afterImage": "assets/clients/client3-after.jpeg"
     }
   ]
 }

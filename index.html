@@ -7,10 +7,10 @@
   <title>Move Like Maher — Strength & Mobility Coaching</title>
   <meta name="description" content="Strength and mobility coaching with Maher. Move better. Feel stronger. Train with confidence." />
 
-  <!-- Fonts (editorial + clean) -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500,700&family=Inter:wght@400,500,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
   <!-- Main CSS -->
   <link rel="stylesheet" href="styles.css" />
@@ -22,19 +22,27 @@
   <div class="container">
     <nav class="nav">
       <a class="brand" href="index.html" style="display:flex; flex-direction:column; line-height:1.05;">
-	<span style="font-weight:700;">Maher Mena Mickel</span>
+	<span style="font-weight:700;">Move Like Maher</span>
       </a>
 
-      <div class="navlinks">
-        <a data-nav href="index.html">Home</a>
-        <a data-nav href="about.html">About</a>
-        <a data-nav href="testimonials.html">Testimonials</a>
-        <a data-nav href="pricing.html">Pricing</a>
+      <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-menu">
+        <div class="navlinks">
+          <a data-nav href="index.html">Home</a>
+          <a data-nav href="about.html">About</a>
+          <a data-nav href="testimonials.html">Testimonials</a>
+          <a data-nav href="pricing.html">Pricing</a>
+        </div>
+
+        <a class="button primary" href="work-with-me.html">
+          Work with me
+        </a>
       </div>
-
-      <a class="button primary" href="work-with-me.html">
-        Work with me
-      </a>
 
     </nav>
   </div>
@@ -43,71 +51,55 @@
 <main>
 
   <!-- HERO -->
-  <section class="hero">
+  <section class="hero hero-background">
+    <div class="hero-overlay"></div>
     <div class="container">
-      <div class="heroGrid">
-
-        <div class="heroCopy">
-          <div class="kicker">
-            <span class="dot"></span>
-            Strength • Mobility • Confidence
-          </div>
-
-          <h1>Move like Maher.</h1>
-
-          <p class="heroLead">
-            Move better, lift stronger, feel confident.
-          </p>
-
-          <div class="heroActions">
-            <a class="button primary" href="work-with-me.html">Work with me</a>
-            <a class="button" href="pricing.html">Packages</a>
-            <a class="button" href="testimonials.html">Client wins</a>
-          </div>
-
-          <div style="margin-top:20px" class="rule"></div>
-
-          <p style="margin-top:12px" class="mono">
-            Based in San Francisco • In-person + online coaching
-          </p>
+      <div class="heroCopy">
+        <div class="kicker">
+          <span class="dot"></span>
+          Strength • Mobility • Confidence
         </div>
 
-        <div class="heroImage">
-          <!-- MAKE SURE THIS FILE EXISTS -->
-          <img src="assets/maher-hero.jpg" alt="Maher training in the gym" />
+        <h1>Move like Maher.</h1>
+
+        <p class="heroLead">
+          Move better, lift stronger, feel confident.
+        </p>
+
+        <div class="heroActions">
+          <a class="button primary" href="work-with-me.html">Work with me</a>
+          <a class="button" href="pricing.html">Packages</a>
+          <a class="button" href="testimonials.html">Client wins</a>
         </div>
 
+        <div style="margin-top:20px" class="rule"></div>
+
+        <p style="margin-top:12px" class="mono">
+          Based in San Francisco • In-person + online coaching
+        </p>
       </div>
     </div>
   </section>
 
   <div class="container"><div class="rule"></div></div>
 
-  <!-- METHOD -->
+  <!-- THE PROCESS -->
   <section class="section">
     <div class="container">
 
       <div class="sectionHead">
-        <h2>The method</h2>
-        <div class="mono">Simple. Intentional. Repeatable.</div>
+        <h2>The Process</h2>
       </div>
 
       <div class="sectionBody">
-
-        <div>
-          <p>
-            Strength and mobility built together — so your body feels capable
-            in and out of the gym.
-          </p>
-        </div>
 
         <ul class="list">
           <li>
             <span>01</span>
             <div>
-              <strong>Strength that carries.</strong><br>
+              <strong>Intro consult.</strong><br>
               <span style="color:var(--muted)">
-                Progressive training with clean technique.
+                Understanding your goals, movement history, and schedule.
               </span>
             </div>
           </li>
@@ -115,9 +107,9 @@
           <li>
             <span>02</span>
             <div>
-              <strong>Mobility with a purpose.</strong><br>
+              <strong>Custom plan.</strong><br>
               <span style="color:var(--muted)">
-                Movement work that supports your lifts and joints.
+                Strength and mobility programming built around your needs and setup.
               </span>
             </div>
           </li>
@@ -125,9 +117,19 @@
           <li>
             <span>03</span>
             <div>
-              <strong>Confidence through consistency.</strong><br>
+              <strong>Ongoing training.</strong><br>
               <span style="color:var(--muted)">
-                A system you can stick to.
+                Regular check-ins and form feedback as you progress.
+              </span>
+            </div>
+          </li>
+
+          <li>
+            <span>04</span>
+            <div>
+              <strong>Progress reviews.</strong><br>
+              <span style="color:var(--muted)">
+                Regular assessments and program updates.
               </span>
             </div>
           </li>
@@ -139,32 +141,37 @@
 
   <div class="container"><div class="rule"></div></div>
 
-  <!-- TESTIMONIAL TEASER -->
+  <!-- CLIENT PROGRESS CAROUSEL -->
   <section class="section">
     <div class="container">
-
       <div class="sectionHead">
-        <h2>What clients say</h2>
-        <a class="mono" href="testimonials.html" style="color:var(--muted)">Read more →</a>
+        <h2>Client Progress</h2>
       </div>
 
-      <div class="sectionBody">
+      <div class="carousel-wrapper">
+        <div class="carousel-container">
+          <button class="carousel-btn carousel-btn-prev" aria-label="Previous" type="button">
+            <span>←</span>
+          </button>
+          
+          <div class="carousel-track-wrapper">
+            <div class="carousel-track" id="clientProgressCarousel">
+              <!-- Carousel slides will be loaded from testimonials.json -->
+            </div>
+          </div>
 
-        <div class="quote">
-          <blockquote>"I've never moved like this before."</blockquote>
+          <button class="carousel-btn carousel-btn-next" aria-label="Next" type="button">
+            <span>→</span>
+          </button>
         </div>
-
-        <div class="quote">
-          <blockquote>"Stronger, less pain, and I finally trust my body."</blockquote>
+        
+        <div class="carousel-cta">
+          <a href="testimonials.html" class="carousel-link-text">View all client stories →</a>
+          <div style="margin-top:16px;">
+            <a class="button primary" href="work-with-me.html">Work with me</a>
+          </div>
         </div>
-
       </div>
-
-      <div style="margin-top:22px; display:flex; gap:12px; flex-wrap:wrap;">
-        <a class="button primary" href="work-with-me.html">Apply to work with me</a>
-        <a class="button" href="pricing.html">See packages</a>
-      </div>
-
     </div>
   </section>
 
@@ -194,17 +201,144 @@
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();
   
-  // Show welcome popup on first visit
-  function showWelcomePopup() {
-    // Check if user has seen the popup before
-    const hasSeenPopup = localStorage.getItem('hasSeenWelcomePopup');
-    if (!hasSeenPopup) {
-      const popup = document.getElementById('welcome-popup');
-      if (popup) {
-        setTimeout(() => {
-          popup.style.display = 'flex';
-        }, 500); // Small delay for better UX
+  // Client Progress Carousel - Load from testimonials.json
+  (function() {
+    const carouselTrack = document.getElementById('clientProgressCarousel');
+    const prevBtn = document.querySelector('.carousel-btn-prev');
+    const nextBtn = document.querySelector('.carousel-btn-next');
+    
+    if (!carouselTrack) return;
+    
+    let currentIndex = 0;
+    let testimonials = [];
+    let totalSlides = 0;
+    
+    // Check if testimonial has required fields and images
+    function isValidTestimonial(testimonial) {
+      return testimonial.beforeImage && 
+             testimonial.afterImage &&
+             testimonial.beforeImage !== "assets/testimonial-placeholder-before.jpg" &&
+             testimonial.afterImage !== "assets/testimonial-placeholder-after.jpg";
+    }
+    
+    // Load testimonials and build carousel
+    async function loadCarousel() {
+      try {
+        const response = await fetch('testimonials.json');
+        if (!response.ok) {
+          throw new Error('Failed to fetch testimonials.json');
+        }
+        const data = await response.json();
+        
+        if (!data || !data.testimonials) {
+          throw new Error('Invalid JSON structure');
+        }
+        
+        // Filter to only testimonials with before/after images
+        testimonials = data.testimonials.filter(isValidTestimonial);
+        totalSlides = testimonials.length;
+        
+        if (totalSlides === 0) {
+          carouselTrack.innerHTML = '<p style="color:var(--muted); text-align:center; padding:40px;">No client progress available. Add testimonials with before/after images to testimonials.json</p>';
+          return;
+        }
+        
+        // Build carousel slides
+        carouselTrack.innerHTML = testimonials.map((testimonial, index) => {
+          return `
+            <div class="carousel-slide ${index === 0 ? 'active' : ''}">
+              <a href="testimonials.html" class="carousel-card-link">
+                <div class="carousel-card">
+                  <div class="carousel-content">
+                    <blockquote class="carousel-quote">${escapeHtml(testimonial.quote)}</blockquote>
+                    <div class="carousel-meta">
+                      <p class="carousel-name">${escapeHtml(testimonial.name)}</p>
+                      <p class="carousel-timeframe">${escapeHtml(testimonial.timeframe)}</p>
+                    </div>
+                  </div>
+                  <div class="carousel-images">
+                    <div class="carousel-image">
+                      <img src="${testimonial.beforeImage}" alt="Before" onerror="this.parentElement.style.display='none'" />
+                      <span class="carousel-label">Before</span>
+                    </div>
+                    <div class="carousel-image">
+                      <img src="${testimonial.afterImage}" alt="After" onerror="this.parentElement.style.display='none'" />
+                      <span class="carousel-label">After</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          `;
+        }).join('');
+        
+        // Initialize navigation
+        showSlide(0);
+      } catch (error) {
+        console.error('Error loading carousel:', error);
+        // Check if it's a CORS error (file:// protocol)
+        if (error.message && error.message.includes('fetch')) {
+          carouselTrack.innerHTML = '<p style="color:var(--muted); text-align:center; padding:40px;">Please use a local server to view this page. Try running: <code style="background:var(--neutral); padding:2px 6px;">python3 -m http.server</code> or <code style="background:var(--neutral); padding:2px 6px;">npx serve</code></p>';
+        } else {
+          carouselTrack.innerHTML = '<p style="color:var(--muted); text-align:center; padding:40px;">Unable to load client progress. Check console for details.</p>';
+        }
       }
+    }
+    
+    function escapeHtml(text) {
+      const div = document.createElement('div');
+      div.textContent = text;
+      return div.innerHTML;
+    }
+    
+    function showSlide(index) {
+      const slides = carouselTrack.querySelectorAll('.carousel-slide');
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+      });
+      currentIndex = index;
+    }
+    
+    function nextSlide() {
+      if (totalSlides === 0) return;
+      const next = (currentIndex + 1) % totalSlides;
+      showSlide(next);
+    }
+    
+    function prevSlide() {
+      if (totalSlides === 0) return;
+      const prev = (currentIndex - 1 + totalSlides) % totalSlides;
+      showSlide(prev);
+    }
+    
+    // Button event listeners
+    if (prevBtn) {
+      prevBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        prevSlide();
+      });
+    }
+    
+    if (nextBtn) {
+      nextBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        nextSlide();
+      });
+    }
+    
+    // Load carousel on page load
+    loadCarousel();
+  })();
+  
+  // Show welcome popup on every visit
+  function showWelcomePopup() {
+    const popup = document.getElementById('welcome-popup');
+    if (popup) {
+      setTimeout(() => {
+        popup.style.display = 'flex';
+      }, 500); // Small delay for better UX
     }
   }
   
@@ -212,7 +346,6 @@
     const popup = document.getElementById('welcome-popup');
     if (popup) {
       popup.style.display = 'none';
-      localStorage.setItem('hasSeenWelcomePopup', 'true');
     }
   }
   
@@ -227,6 +360,8 @@
   // Show popup when page loads
   showWelcomePopup();
 </script>
+
+<script src="script.js"></script>
 
 </body>
 </html>
