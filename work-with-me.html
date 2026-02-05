@@ -35,7 +35,7 @@
           <a data-nav href="index.html">Home</a>
           <a data-nav href="about.html">About</a>
           <a data-nav href="testimonials.html">Testimonials</a>
-          <a data-nav href="pricing.html">Pricing</a>
+          <a data-nav href="pricing.html">Coaching Options</a>
         </div>
 
         <a class="button primary" href="work-with-me.html">Work with me</a>
@@ -67,41 +67,156 @@
   <section class="section">
     <div class="container">
 
-      <!-- Minimal Netlify form -->
+      <!-- Netlify form -->
       <form name="work-with-maher" method="POST" data-netlify="true" style="max-width:760px;">
         <input type="hidden" name="form-name" value="work-with-maher" />
 
         <div style="display:grid; gap:14px; margin-top:6px;">
+          
+          <!-- Basic Info -->
+          <div style="display:grid; gap:14px;">
+            <label style="display:grid; gap:8px;">
+              <span class="mono">Full Name</span>
+              <input name="name" required
+                style="padding:12px 12px; border:1px solid var(--rule); background:transparent; color:var(--text); font:inherit;" />
+            </label>
+
+            <label style="display:grid; gap:8px;">
+              <span class="mono">Email Address</span>
+              <input name="email" type="email" required
+                style="padding:12px 12px; border:1px solid var(--rule); background:transparent; color:var(--text); font:inherit;" />
+            </label>
+
+            <label style="display:grid; gap:8px;">
+              <span class="mono">Phone Number <span style="color:var(--subtle); font-weight:normal;">(optional but recommended)</span></span>
+              <input name="phone" type="tel"
+                style="padding:12px 12px; border:1px solid var(--rule); background:transparent; color:var(--text); font:inherit;" />
+            </label>
+          </div>
+
+          <div style="margin:24px 0; border-top:1px solid var(--rule);"></div>
+
+          <!-- Question 1 -->
+          <div style="display:grid; gap:8px;">
+            <label style="display:grid; gap:8px;">
+              <span class="mono">1. What best describes where you're at right now?</span>
+              <select name="current-situation" id="current-situation" required
+                style="padding:12px 12px; border:1px solid var(--rule); background:transparent; color:var(--text); font:inherit;">
+                <option value="">Select one...</option>
+                <option value="feel-better">I want to feel better in my body</option>
+                <option value="not-getting-results">I'm training but not getting the results I want</option>
+                <option value="stiff-limited">I feel stiff, limited, or uncomfortable</option>
+                <option value="returning">I'm getting back into training after time off or injury</option>
+                <option value="other">Other</option>
+              </select>
+            </label>
+            <div id="other-input-wrapper" style="display:none;">
+              <label style="display:grid; gap:8px;">
+                <span class="mono">Please specify:</span>
+                <input name="current-situation-other" type="text" id="current-situation-other"
+                  style="padding:12px 12px; border:1px solid var(--rule); background:transparent; color:var(--text); font:inherit;" />
+              </label>
+            </div>
+          </div>
+
+          <!-- Question 2 -->
+          <div style="display:grid; gap:8px;">
+            <span class="mono">2. What are you hoping to improve? (select all that apply)</span>
+            <div style="display:grid; gap:10px; margin-top:4px;">
+              <label style="display:flex; gap:10px; align-items:center; cursor:pointer;">
+                <input type="checkbox" name="improve" value="strength" style="width:18px; height:18px; cursor:pointer;" />
+                <span>Strength</span>
+              </label>
+              <label style="display:flex; gap:10px; align-items:center; cursor:pointer;">
+                <input type="checkbox" name="improve" value="mobility" style="width:18px; height:18px; cursor:pointer;" />
+                <span>Mobility</span>
+              </label>
+              <label style="display:flex; gap:10px; align-items:center; cursor:pointer;">
+                <input type="checkbox" name="improve" value="posture" style="width:18px; height:18px; cursor:pointer;" />
+                <span>Posture</span>
+              </label>
+              <label style="display:flex; gap:10px; align-items:center; cursor:pointer;">
+                <input type="checkbox" name="improve" value="energy" style="width:18px; height:18px; cursor:pointer;" />
+                <span>Energy and recovery</span>
+              </label>
+              <label style="display:flex; gap:10px; align-items:center; cursor:pointer;">
+                <input type="checkbox" name="improve" value="movement" style="width:18px; height:18px; cursor:pointer;" />
+                <span>Overall movement and confidence</span>
+              </label>
+              <label style="display:flex; gap:10px; align-items:center; cursor:pointer;">
+                <input type="checkbox" name="improve" value="longevity" style="width:18px; height:18px; cursor:pointer;" />
+                <span>Long-term health and longevity</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Question 3 -->
           <label style="display:grid; gap:8px;">
-            <span class="mono">Name</span>
-            <input name="name" required
+            <span class="mono">3. Where do you feel the most limited or uncomfortable right now?</span>
+            <input name="limitations" type="text"
               style="padding:12px 12px; border:1px solid var(--rule); background:transparent; color:var(--text); font:inherit;" />
           </label>
 
+          <!-- Question 4 -->
           <label style="display:grid; gap:8px;">
-            <span class="mono">Email</span>
-            <input name="email" type="email" required
-              style="padding:12px 12px; border:1px solid var(--rule); background:transparent; color:var(--text); font:inherit;" />
+            <span class="mono">4. How long have you felt this way?</span>
+            <select name="duration"
+              style="padding:12px 12px; border:1px solid var(--rule); background:transparent; color:var(--text); font:inherit;">
+              <option value="">Select one...</option>
+              <option value="less-than-3">Less than 3 months</option>
+              <option value="3-6">3–6 months</option>
+              <option value="6-12">6–12 months</option>
+              <option value="over-year">Over a year</option>
+            </select>
           </label>
 
+          <!-- Question 5 -->
           <label style="display:grid; gap:8px;">
-            <span class="mono">What are you training for?</span>
-            <input name="goal" placeholder="Strength, mobility, performance, confidence, getting back into training…"
-              style="padding:12px 12px; border:1px solid var(--rule); background:transparent; color:var(--text); font:inherit;" />
-          </label>
-
-          <label style="display:grid; gap:8px;">
-            <span class="mono">Message</span>
-            <textarea name="message" rows="6" placeholder="Anything Maher should know (experience level, injuries, schedule, what you want help with)…"
+            <span class="mono">5. Are you currently training? If yes, how would you describe it?</span>
+            <textarea name="current-training" rows="3"
               style="padding:12px 12px; border:1px solid var(--rule); background:transparent; color:var(--text); font:inherit; resize:vertical;"></textarea>
           </label>
 
-          <div style="display:flex; gap:12px; flex-wrap:wrap; align-items:center;">
+          <!-- Question 6 -->
+          <label style="display:grid; gap:8px;">
+            <span class="mono">6. What do you feel is missing from your current approach?</span>
+            <textarea name="missing" rows="3"
+              style="padding:12px 12px; border:1px solid var(--rule); background:transparent; color:var(--text); font:inherit; resize:vertical;"></textarea>
+          </label>
+
+          <!-- Question 7 -->
+          <label style="display:grid; gap:8px;">
+            <span class="mono">7. How serious are you about improving your health and movement right now?</span>
+            <select name="seriousness"
+              style="padding:12px 12px; border:1px solid var(--rule); background:transparent; color:var(--text); font:inherit;">
+              <option value="">Select one...</option>
+              <option value="exploring">Just exploring</option>
+              <option value="somewhat">Somewhat serious</option>
+              <option value="very">Very serious</option>
+            </select>
+          </label>
+
+          <!-- Question 8 -->
+          <div style="display:grid; gap:8px;">
+            <span class="mono">8. Are you open to investing in coaching if it's the right fit?</span>
+            <div style="display:flex; gap:16px; margin-top:4px;">
+              <label style="display:flex; gap:10px; align-items:center; cursor:pointer;">
+                <input type="radio" name="investing" value="yes" style="width:18px; height:18px; cursor:pointer;" />
+                <span>Yes</span>
+              </label>
+              <label style="display:flex; gap:10px; align-items:center; cursor:pointer;">
+                <input type="radio" name="investing" value="no" style="width:18px; height:18px; cursor:pointer;" />
+                <span>No</span>
+              </label>
+            </div>
+          </div>
+
+          <div style="display:flex; gap:12px; flex-wrap:wrap; align-items:center; margin-top:8px;">
             <button class="button primary" type="submit">Send inquiry</button>
           </div>
 
           <p style="color:var(--subtle); max-width:70ch;">
-            Prefer email? Send a note to <a href="mailto:hello@movelikemaher.com" style="border-bottom:1px solid var(--rule);">hello@movelikemaher.com</a>.
+            Prefer email? Send a note to <a href="mailto:mahermickel2003@gmail.com" style="border-bottom:1px solid var(--rule);">mahermickel2003@gmail.com</a>.
           </p>
         </div>
       </form>
@@ -119,6 +234,23 @@
 
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();
+  
+  // Show/hide "Other" input for question 1
+  const currentSituationSelect = document.getElementById('current-situation');
+  const otherInputWrapper = document.getElementById('other-input-wrapper');
+  const otherInput = document.getElementById('current-situation-other');
+  
+  if (currentSituationSelect && otherInputWrapper) {
+    currentSituationSelect.addEventListener('change', function() {
+      if (this.value === 'other') {
+        otherInputWrapper.style.display = 'grid';
+        if (otherInput) otherInput.focus();
+      } else {
+        otherInputWrapper.style.display = 'none';
+        if (otherInput) otherInput.value = '';
+      }
+    });
+  }
 </script>
 
 <script src="script.js"></script>
