@@ -16,9 +16,9 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 
-<body>
+<body class="page-home">
 
-<header class="header">
+<header class="header header-hero">
   <div class="container">
     <nav class="nav">
       <a class="brand" href="index.html" style="display:flex; flex-direction:column; line-height:1.05;">
@@ -40,7 +40,7 @@
         </div>
 
         <a class="button primary" href="work-with-me.html">
-          Work with me
+          Book a consult
         </a>
       </div>
 
@@ -53,32 +53,6 @@
   <!-- HERO -->
   <section class="hero hero-background">
     <div class="hero-overlay"></div>
-    <div class="container">
-      <div class="heroCopy">
-        <div class="kicker">
-          <span class="dot"></span>
-          Strength • Mobility • Confidence
-        </div>
-
-        <h1>Move like Maher.</h1>
-
-        <p class="heroLead">
-          Move better, lift stronger, feel confident.
-        </p>
-
-        <div class="heroActions">
-          <a class="button primary" href="work-with-me.html">Work with me</a>
-          <a class="button" href="pricing.html">Packages</a>
-          <a class="button" href="testimonials.html">Client wins</a>
-        </div>
-
-        <div style="margin-top:20px" class="rule"></div>
-
-        <p style="margin-top:12px" class="mono">
-          Based in San Francisco • In-person + online coaching
-        </p>
-      </div>
-    </div>
   </section>
 
   <div class="container"><div class="rule"></div></div>
@@ -150,25 +124,26 @@
 
       <div class="carousel-wrapper">
         <div class="carousel-container">
-          <button class="carousel-btn carousel-btn-prev" aria-label="Previous" type="button">
-            <span>←</span>
-          </button>
-          
           <div class="carousel-track-wrapper">
             <div class="carousel-track" id="clientProgressCarousel">
               <!-- Carousel slides will be loaded from testimonials.json -->
             </div>
           </div>
 
-          <button class="carousel-btn carousel-btn-next" aria-label="Next" type="button">
-            <span>→</span>
-          </button>
+          <div class="carousel-controls">
+            <button class="carousel-btn carousel-btn-prev" aria-label="Previous" type="button">
+              <span>←</span>
+            </button>
+            <button class="carousel-btn carousel-btn-next" aria-label="Next" type="button">
+              <span>→</span>
+            </button>
+          </div>
         </div>
         
         <div class="carousel-cta">
           <a href="testimonials.html" class="carousel-link-text">View all client stories →</a>
           <div style="margin-top:16px;">
-            <a class="button primary" href="work-with-me.html">Work with me</a>
+            <a class="button primary" href="work-with-me.html">Book a consult</a>
           </div>
         </div>
       </div>
@@ -184,23 +159,14 @@
     <div class="modal-header">
       <h2>Book a free consult</h2>
     </div>
-    <p>Ready to move better? Let's chat about your goals and see if we're a good fit.</p>
+    <p>Ready to move better? We'll talk through your goals and I'll assess how you move so we can map out exactly what your body needs.</p>
     <div style="display:flex; gap:12px; flex-wrap:wrap; justify-content:center; margin-top:20px;">
       <a class="button primary" href="work-with-me.html" onclick="closeWelcomePopup()">Book now</a>
-      <button class="button" onclick="closeWelcomePopup()">Maybe later</button>
     </div>
   </div>
 </div>
 
-<footer class="footer">
-  <div class="container">
-    <p>© <span id="year"></span> Maher — Strength & Mobility Coaching</p>
-  </div>
-</footer>
-
 <script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-  
   // Client Progress Carousel - Load from testimonials.json
   (function() {
     const carouselTrack = document.getElementById('clientProgressCarousel');

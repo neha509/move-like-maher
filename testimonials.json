@@ -1,7 +1,7 @@
 {
   "testimonials": [
     {
-      "quote": "Insert quote here",
+      "quote": "I worked with two trainers for over a year and never saw results like this. In 4 months with Maher, I’m stronger, leaner, and actually moving like an athlete. Wish I found him sooner.",
       "name": "Kunal",
       "gender": "Male",
       "timeframe": "4 months + 2 weeks",
@@ -9,7 +9,7 @@
       "afterImage": "assets/clients/client1-after.jpeg"
     },
     {
-      "quote": "Insert quote here",
+      "quote": "I originally bought my wedding dress four sizes larger than what I ended up wearing, I had to exchange it four different times because of the progress I made. My trainer didn’t just help me lose weight, they helped me walk into my wedding day feeling confident, strong, and truly like myself.",
       "name": "Sylvia",
       "gender": "Female",
       "timeframe": "2 months + 3 weeks",
@@ -17,7 +17,7 @@
       "afterImage": "assets/clients/client2-after.jpeg"
     },
     {
-      "quote": "Insert quote here",
+      "quote": "",
       "name": "Reshaun",
       "gender": "Male",
       "timeframe": "3 months",

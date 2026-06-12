@@ -1,4 +1,14 @@
 (function () {
+  // Transparent homepage header over hero image
+  const heroHeader = document.querySelector(".header-hero");
+  if (heroHeader) {
+    const syncHeader = () => {
+      heroHeader.classList.toggle("is-scrolled", window.scrollY > 24);
+    };
+    window.addEventListener("scroll", syncHeader, { passive: true });
+    syncHeader();
+  }
+
   // Active nav highlighting
   const path = window.location.pathname;
   const current = path.endsWith("/") ? "index.html" : path.split("/").pop();
