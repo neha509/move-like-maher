@@ -68,8 +68,11 @@
     <div class="container">
 
       <!-- Netlify form -->
-      <form name="work-with-maher" method="POST" action="/thank-you.html" data-netlify="true" style="max-width:760px;">
+      <form name="work-with-maher" method="POST" action="/thank-you.html" netlify netlify-honeypot="bot-field" style="max-width:760px;">
         <input type="hidden" name="form-name" value="work-with-maher" />
+        <p hidden>
+          <label>Don’t fill this out: <input name="bot-field" /></label>
+        </p>
 
         <div style="display:grid; gap:14px; margin-top:6px;">
           
